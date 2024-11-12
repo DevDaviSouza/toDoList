@@ -206,7 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
         loadTasks();
     }});
 
-    document.getElementById('editForm').addEventListener('submit', function (event) {
+    document.getElementById('editForm').addEventListener('submit', (event) => {
         event.preventDefault();
     
         const taskId = parseInt(document.getElementById('editTaskId').value); // Garanta que o ID seja um número
@@ -236,5 +236,3 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Please fill in all fields.');
         }
     });
-    
-    ;
